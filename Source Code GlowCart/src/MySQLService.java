@@ -177,7 +177,8 @@ public class MySQLService {
                 Promo promoUsed = S_grabPsPromo(orderID);
                 ArrayList<DetailPesanan> listDP = S_grabPsDP(orderID);
 
-                Pesanan p = new Pesanan(orderID, orderDate, sendAddress, packingNumber, courier, shippingFee, listDP, promoUsed);
+                Pesanan p = new Pesanan(orderID, orderDate, sendAddress, packingNumber, 
+                                        courier, shippingFee, listDP, promoUsed);
                 pesananList.add(p);
             }
         } catch (SQLException e) {
