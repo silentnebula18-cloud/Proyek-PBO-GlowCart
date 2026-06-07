@@ -309,7 +309,8 @@ public class MySQLService {
                 Product product = null;
                 ArrayList<Review> rvList = new ArrayList<>();
                 try{
-                    product = new Product(productID, namaProduct, brand, size, stok, harga, BPOMcode, ingredients, deskripsi, caraPakai);
+                    product = new Product(productID, namaProduct, brand, size, stok, harga, 
+                                          BPOMcode, ingredients, deskripsi, caraPakai);
                     rvList = S_grabRvPrList(productID);
                     product.setReviewList(rvList);
                 } catch(Exception a){
@@ -427,7 +428,8 @@ public class MySQLService {
     }
 
     // Tambah pesanan baru, return orderID yang dibuat
-    public String S_addPesanan(String memberID, String sendAddress, String packingNumber, String courier, double shippingFee, String promoCode){
+    public String S_addPesanan(String memberID, String sendAddress, String packingNumber, 
+                               String courier, double shippingFee, String promoCode){
         String query = "CALL addPesanan(?, ?, ?, ?, ?, ?)";
         try{
             PreparedStatement ps = koneksi.prepareStatement(query);
