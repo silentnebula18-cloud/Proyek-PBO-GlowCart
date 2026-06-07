@@ -33,8 +33,11 @@ public class Product implements AppService {
         this.reviewList = new ArrayList<>();
     }
 
-    //konstruktor untuk membuat Product dengan nilai productID, namaProduct, brand, size, stok, harga, BPOMcode, ingredients, deskripsi, caraPakai tertentu
-    public Product(String productID, String namaProduct, String brand, double size, int stok, double harga, String BPOMcode, String ingredients, String deskripsi, String caraPakai) throws Exception {
+    //konstruktor untuk membuat Product dengan nilai productID, namaProduct, brand, 
+    // size, stok, harga, BPOMcode, ingredients, deskripsi, caraPakai tertentu
+    public Product(String productID, String namaProduct, String brand, double size, 
+                    int stok, double harga, String BPOMcode, String ingredients, 
+                    String deskripsi, String caraPakai) throws Exception {
         if (size < 0) {
             throw new Exception("Gagal membuat produk: Size tidak boleh kurang dari 0!");
         }
