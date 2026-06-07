@@ -1,12 +1,3 @@
-/*Nama File: Pesanan.java*/
-/*Deskripsi: atribut dan metode dalam kelas Pesanan*/
-/*Tanggal Buat: 23 Mei 2026*/
-/* Kelas: C */
-/* Anggota: Annis Fakhiroh Akbar (24060124130110)     */
-/*          Binar Ridha Wiritanaya (24060124140143)   */
-/*          Christianna Olivia J. M. (24060124140168) */
-/*          Dian Aulya Dewiyani (24060124130059)     */
-
 /**
  * Nama File: Pesanan.java
  * Deskripsi: atribut dan metode dalam kelas Pesanan
