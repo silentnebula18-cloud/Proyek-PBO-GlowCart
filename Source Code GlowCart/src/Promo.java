@@ -30,7 +30,8 @@ public class Promo {
     }
 
     //Konstruktor dengan Parameter
-    public Promo(String promoCode, String description, LocalDate startDate, LocalDate endDate, double discountPct, int quota, double minPurchase){
+    public Promo(String promoCode, String description, LocalDate startDate, LocalDate endDate, 
+                double discountPct, int quota, double minPurchase){
         this.promoCode = promoCode;
         this.description = description;
         this.startDate = startDate;
