@@ -239,7 +239,8 @@ public class MySQLService {
                 DetailPesanan dp = null;
                 ArrayList<Review> rvList = new ArrayList<>();
                 try{
-                    product = new Product(productID, namaProduct, brand, size, stok, harga, BPOMcode, ingredients, deskripsi, caraPakai);
+                    product = new Product(productID, namaProduct, brand, size, stok, harga, 
+                                          BPOMcode, ingredients, deskripsi, caraPakai);
                     rvList = S_grabRvPrList(productID);
                     product.setReviewList(rvList);
                     dp = new DetailPesanan(quantity, product);
