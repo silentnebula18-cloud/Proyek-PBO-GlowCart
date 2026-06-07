@@ -198,7 +198,8 @@ class CR_View{
     void ShowAllPromo(ArrayList<Promo> allP){
         System.out.println("=============================================================");
         for(Promo p : allP){
-            System.out.println("- " + p.getPromoCode() + " | " + p.getDescription() + " | diskon " + (p.getDiscountPct()*100) + "%");
+            System.out.println("- " + p.getPromoCode() + " | " + p.getDescription() + " | diskon " + 
+                               (p.getDiscountPct()*100) + "%");
         }
         System.out.println("=============================================================");
         System.out.println();
