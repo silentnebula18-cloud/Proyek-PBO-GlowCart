@@ -459,7 +459,7 @@ class CR_Controller{
 
                             // Buat pesanan di DB, dapat orderID
                             String orderID = M.addPesanan(currMember.getMemberID(), address, packNum, 
-                                                          courier, shipFee, promoCode);
+                                                           courier, shipFee, promoCode);
 
                             if(orderID != null){
                                 // Input produk-produk yang dipesan
